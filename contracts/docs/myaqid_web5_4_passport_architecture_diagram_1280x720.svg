@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .border-heavy { fill: #FFFFFF; stroke: #000000; stroke-width: 2; }
+      .border-subtle { fill: #FAFAFA; stroke: #A6A8AB; stroke-width: 1.5; }
+      .fill-black { fill: #000000; }
+      .fill-grey { fill: #F3F4F6; stroke: #A6A8AB; stroke-width: 1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #000000; letter-spacing: 0.5px; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; fill: #52525B; }
+      .sec-label { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #FFFFFF; letter-spacing: 1.2px; }
+      .card-title { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #000000; }
+      .card-body { font-family: Arial, Helvetica, sans-serif; font-size: 12.5px; font-weight: 400; fill: #27272A; }
+      .mono { font-family: 'Courier New', monospace; font-size: 12px; font-weight: 700; fill: #000000; }
+      .badge-text { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #000000; }
+      .arrow { stroke: #000000; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1280" height="720" />
+  <rect x="20" y="20" width="1240" height="680" fill="none" stroke="#E5E7EB" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="50" y="68" class="title">MyAQid — Invisible Web5 RWA Provenance &amp; 4-Passport Architecture</text>
+  <text x="50" y="94" class="subtitle">Zero Wallets or Seed Phrases for Users  |  Zero PII On-Chain (Keyed HMAC-SHA-256)  |  Offline-First GCP + BNB Smart Chain</text>
+  <rect x="1030" y="45" width="200" height="34" class="fill-black" />
+  <text x="1130" y="66" text-anchor="middle" class="sec-label">MYAQID.IO  •  WEB5</text>
+  <line x1="50" y1="114" x2="1230" y2="114" stroke="#000000" stroke-width="1.5" />
+
+  <!-- COLUMN 1: PHYSICAL & POS TRIGGERS -->
+  <rect x="50" y="136" width="250" height="26" class="fill-black" />
+  <text x="175" y="153" text-anchor="middle" class="sec-label">1. SUB-2S EDGE TRIGGERS</text>
+
+  <rect x="50" y="170" width="250" height="105" class="border-heavy" />
+  <text x="66" y="196" class="card-title">NFC Tap (NTAG 424 DNA)</text>
+  <text x="66" y="218" class="card-body">• Dynamic SUN tap signature</text>
+  <text x="66" y="238" class="card-body">• Luxury sportswear &amp; RWA tags</text>
+  <text x="66" y="258" class="mono">/verify/:passportId</text>
+
+  <rect x="50" y="290" width="250" height="105" class="border-heavy" />
+  <text x="66" y="316" class="card-title">POS &amp; Venue QR Scan</text>
+  <text x="66" y="338" class="card-body">• Retail checkout, tickets &amp; entries</text>
+  <text x="66" y="358" class="card-body">• HTTP 409 anti-clone 1-time lock</text>
+  <text x="66" y="378" class="mono">/checkin  (Offline IndexedDB)</text>
+
+  <rect x="50" y="410" width="250" height="105" class="border-heavy" />
+  <text x="66" y="436" class="card-title">Dual-Gate QC &amp; Agent API</text>
+  <text x="66" y="458" class="card-body">• Gate 1 Factory &amp; Gate 2 Hub QC</text>
+  <text x="66" y="478" class="card-body">• Autonomous KYA verification</text>
+  <text x="66" y="498" class="mono">/qc   |   GET /api/verify</text>
+
+  <!-- Arrows Col 1 -> Col 2 -->
+  <line x1="300" y1="222" x2="352" y2="222" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="300" y1="342" x2="352" y2="342" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="300" y1="462" x2="352" y2="462" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- COLUMN 2: FOUR UNIVERSAL WEB5 PASSPORTS -->
+  <rect x="360" y="136" width="440" height="26" class="fill-black" />
+  <text x="580" y="153" text-anchor="middle" class="sec-label">2. SOVEREIGN WEB5 VAULT (4 UNIVERSAL PASSPORTS)</text>
+
+  <!-- Passport 1 -->
+  <rect x="360" y="170" width="212" height="165" class="border-heavy" />
+  <rect x="374" y="182" width="90" height="20" class="fill-grey" />
+  <text x="419" y="196" text-anchor="middle" class="badge-text">PASSPORT 01</text>
+  <text x="374" y="224" class="card-title">Product Passport</text>
+  <text x="374" y="246" class="card-body">• Cryptographic COA &amp; origin</text>
+  <text x="374" y="266" class="card-body">• EU DPP role-based data</text>
+  <text x="374" y="286" class="card-body">• Dual-Gate QC custody trail</text>
+  <text x="374" y="306" class="card-body">• 1-time claim &amp; P2P transfer</text>
+
+  <!-- Passport 2 -->
+  <rect x="588" y="170" width="212" height="165" class="border-heavy" />
+  <rect x="602" y="182" width="90" height="20" class="fill-grey" />
+  <text x="647" y="196" text-anchor="middle" class="badge-text">PASSPORT 02</text>
+  <text x="602" y="224" class="card-title">Human Passport</text>
+  <text x="602" y="246" class="card-body">• User-owned W3C DID &amp; VCs</text>
+  <text x="602" y="266" class="card-body">• Verified POS &amp; entry proofs</text>
+  <text x="602" y="286" class="card-body">• Capability &amp; RWA ownership</text>
+  <text x="602" y="306" class="card-body">• Self-custody export option</text>
+
+  <!-- Passport 3 -->
+  <rect x="360" y="350" width="212" height="165" class="border-heavy" />
+  <rect x="374" y="362" width="90" height="20" class="fill-grey" />
+  <text x="419" y="376" text-anchor="middle" class="badge-text">PASSPORT 03</text>
+  <text x="374" y="404" class="card-title">Business Passport</text>
+  <text x="374" y="426" class="card-body">• Verified SME corporate ID</text>
+  <text x="374" y="446" class="card-body">• 11 active brand namespaces</text>
+  <text x="374" y="466" class="card-body">• Supplier &amp; audit milestones</text>
+  <text x="374" y="486" class="card-body">• Autonomous Ops controls</text>
+
+  <!-- Passport 4 -->
+  <rect x="588" y="350" width="212" height="165" class="border-heavy" />
+  <rect x="602" y="362" width="90" height="20" class="fill-grey" />
+  <text x="647" y="376" text-anchor="middle" class="badge-text">PASSPORT 04</text>
+  <text x="602" y="404" class="card-title">Agent Passport (KYA)</text>
+  <text x="602" y="426" class="card-body">• Know-Your-Agent credentials</text>
+  <text x="602" y="446" class="card-body">• Scoped API permissions</text>
+  <text x="602" y="466" class="card-body">• Programmatic /api/verify</text>
+  <text x="602" y="486" class="card-body">• Autonomous B2B checks</text>
+
+  <!-- Arrows Col 2 -> Col 3 -->
+  <line x1="800" y1="252" x2="852" y2="252" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="800" y1="432" x2="852" y2="432" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- COLUMN 3: ZERO-PII PRIVACY & BNB SETTLEMENT -->
+  <rect x="860" y="136" width="370" height="26" class="fill-black" />
+  <text x="1045" y="153" text-anchor="middle" class="sec-label">3. PRIVACY ENGINE &amp; BNB SETTLEMENT</text>
+
+  <rect x="860" y="170" width="370" height="165" class="border-subtle" />
+  <text x="878" y="198" class="card-title">GCP + Firebase (europe-west2 London)</text>
+  <text x="878" y="222" class="card-body">• Encrypted PII &amp; UK GDPR consent timestamps</text>
+  <text x="878" y="244" class="card-body">• Google Cloud KMS (HSM) custodial key security</text>
+  <text x="878" y="266" class="card-body">• Strips ALL PII -&gt; Keyed HMAC-SHA-256 digest</text>
+  <text x="878" y="288" class="card-body">• Salt destruction = GDPR Right-to-Erasure</text>
+  <text x="878" y="314" class="mono">HMAC_SHA256(salt, canonicalPayload)</text>
+
+  <rect x="860" y="350" width="370" height="165" class="border-heavy" />
+  <text x="878" y="378" class="card-title">BNB Smart Chain (MyAQid.sol)</text>
+  <text x="878" y="402" class="card-body">• Active Launch Settlement (Solidity ^0.8.20)</text>
+  <text x="878" y="424" class="card-body">• Anchors bytes32 hash + namespace + stage</text>
+  <text x="878" y="446" class="card-body">• Publicly verifiable on BscScan (Zero PII)</text>
+  <text x="878" y="468" class="card-body">• Chain-interchangeable modular adapter rail</text>
+  <text x="878" y="494" class="mono">event ProvenanceAnchored(...)</text>
+
+  <!-- Bottom Lifecycle Bar -->
+  <rect x="50" y="540" width="1180" height="135" class="border-subtle" />
+  <rect x="50" y="540" width="1180" height="26" class="fill-black" />
+  <text x="640" y="557" text-anchor="middle" class="sec-label">END-TO-END VERIFIED LIFECYCLE &amp; ACTIVE COMMERCIAL NAMESPACES</text>
+
+  <!-- Lifecycle Steps -->
+  <rect x="74" y="582" width="210" height="44" class="border-heavy" />
+  <text x="179" y="601" text-anchor="middle" class="badge-text">GATE 1: FACTORY QC</text>
+  <text x="179" y="617" text-anchor="middle" class="mono">VERIFIED_AT_SOURCE</text>
+
+  <line x1="284" y1="604" x2="322" y2="604" class="arrow" marker-end="url(#arrowhead)" />
+
+  <rect x="330" y="582" width="210" height="44" class="border-heavy" />
+  <text x="435" y="601" text-anchor="middle" class="badge-text">GATE 2: REGIONAL HUB QC</text>
+  <text x="435" y="617" text-anchor="middle" class="mono">IN_REGIONAL_CUSTODY</text>
+
+  <line x1="540" y1="604" x2="578" y2="604" class="arrow" marker-end="url(#arrowhead)" />
+
+  <rect x="586" y="582" width="210" height="44" class="border-heavy" />
+  <text x="691" y="601" text-anchor="middle" class="badge-text">1-TAP CLAIM / POS SCAN</text>
+  <text x="691" y="617" text-anchor="middle" class="mono">OWNER_CLAIMED</text>
+
+  <line x1="796" y1="604" x2="834" y2="604" class="arrow" marker-end="url(#arrowhead)" />
+
+  <rect x="842" y="582" width="364" height="44" class="fill-black" />
+  <text x="1024" y="601" text-anchor="middle" class="sec-label">BSCSCAN &amp; AGENT /API/VERIFY PROOF</text>
+  <text x="1024" y="617" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#A6A8AB">ANTI-CLONE HTTP 409 DUPLICATE_CLAIM_ALERT</text>
+
+  <!-- Footer -->
+  <text x="74" y="656" class="subtitle">Active Namespaces: MORR • JFLS • CARM • TAOM • PALM • MEGA • DKIS • TH.0 • ESGYN • DFGR • BELC  |  Data Controller: MyAQ Ltd (UK Information Commission)</text>
+</svg>
